@@ -1,0 +1,654 @@
+.from-control-graph {
+  /* background: url(../../../assets/icons/shape.png) 96% 50% / 13px no-repeat #fff; */
+  background: var(--bg-dashboard);
+  padding: 10px;
+  width: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: center;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.btn-filter-date-graph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.0979px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 0;
+  padding: 10px;
+}
+.btn-filter-date-graph.active {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.0979px;
+  line-height: 20px;
+  color: #00ccff;
+  background: #ffffff;
+  box-shadow: 0px 3.49278px 3.49278px rgba(229, 179, 54, 0.1);
+}
+.page-content-base-container {
+  /* left: 5%; */
+  transition: 0.75s;
+  overflow: auto;
+  width: 100% !important;
+  display: flex;
+  justify-content: flex-end;
+  /* width: calc(100% - 280px); */
+}
+#nav_button:checked ~ .admin-page-container-height {
+  width: calc(100% - 130px) !important;
+}
+.user-dash-page-content-container {
+  background: #ffffff;
+  padding: 20px 34px;
+}
+.item-stat-dashboad-view {
+  padding: 10px 20px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+  background: #fff;
+}
+
+.titre-item-stat-dashboad-view {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.2131px;
+  line-height: 19px;
+  color: #747474;
+}
+.chiffre-item-stat-dashboad-view {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43.235px;
+  line-height: 56px;
+  color: #000000;
+}
+.content-text-item-stat-dashboad-view {
+  width: 100%;
+}
+
+/* .content-item-icon-stat-dashboard-view {
+      box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+      border-radius: 12px;
+      width: 50px;
+      height: 46px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      font-size: 25px;
+      background: #fff;
+  } */
+.admin-page-container-layout {
+  margin-top: 90px;
+}
+.content-stat-dashboard-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-chart-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-control-select-date-graph {
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 100px;
+  /* background: url(../../../assets/icons/Shape.png) 96% 50% / 13px no-repeat
+      #fff; */
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.4px;
+  color: #252733;
+  width: 300px;
+  padding: 15px;
+  border: 0;
+}
+.chart-item-admin-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.title-content-dash-admin {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+.container-title-content-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-content-dash-admin {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+.content-graph-admin {
+  background: var(--background-color);
+  padding: 20px;
+}
+/* ======================== CUSTOM CALENDAR ====================== */
+.content-graph-admin .react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  border: none;
+  line-height: 1.125em;
+}
+.content-graph-admin .react-calendar__tile--now,
+.content-graph-admin .react-calendar__tile--active {
+  background: rgb(28, 81, 130) !important;
+  border-radius: 10px;
+  color: #fff !important;
+}
+.content-graph-admin .react-calendar__tile {
+  max-width: 100%;
+  padding: 13px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+
+  color: #0d0d0d;
+  text-align: center;
+  font-size: 13.313px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.content-graph-admin .react-calendar__month-view__weekdays {
+  color: #2b2b36;
+  text-align: center;
+
+  font-size: 10.938px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 6px;
+}
+.content-graph-admin abbr[title] {
+  text-decoration: none;
+}
+.content-graph-admin .react-calendar__navigation {
+  color: #000;
+  text-align: center;
+
+  font-size: 12.29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.123px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #d2d2d2;
+}
+.content-graph-admin
+  span.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+  color: #000;
+}
+.content-graph-admin .react-calendar__navigation button {
+  color: #d2d2d2;
+}
+.content-graph-admin
+  button.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button,
+.content-graph-admin
+  button.react-calendar__navigation__arrow.react-calendar__navigation__next2-button {
+  display: none;
+}
+.content-graph-admin
+  button.react-calendar__navigation__arrow.react-calendar__navigation__prev-button,
+.content-graph-admin
+  button.react-calendar__navigation__arrow.react-calendar__navigation__next-button {
+  font-size: 20px;
+}
+/* ======================== END CUSTOM CALENDAR ====================== */
+.custom-calendar-title {
+  color: #000;
+
+  font-size: 20.483px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.205px;
+  text-transform: capitalize;
+}
+.calendar-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-calendar-title-avenir {
+  color: var(--dmv-black, #23262f);
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40.965px;
+}
+.custom-calendar-btn-voir-tout {
+  color: var(--bleu-clair, #36c8ff);
+
+  font-size: 12.29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.579px;
+  text-decoration-line: underline;
+}
+.custom-calendar-title-avenir-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-calendar-title-rdv {
+  color: var(--dmv-black, #23262f);
+
+  font-size: 16.386px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.custom-calendar-date-heure {
+  color: var(--gris-2, #98a2b3);
+
+  font-size: 12.29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.custom-calendar-title-rdv-container {
+  border-radius: 10.241px;
+  background: #f0f9fd;
+  padding: 12px 10px;
+}
+
+.custom-from-control-graph {
+  background: #fff;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.9818px;
+  line-height: 27px;
+  color: #000000;
+  padding: 15px;
+  border: 0;
+  width: 200px;
+}
+
+/* ==================== CUSTOM PROGRESS BAR ====================== */
+.custom-progress-label span {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: right;
+  color: #121212;
+}
+.custom-progress-label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: #a6a6a6;
+}
+.custom-progress {
+  height: 6px;
+}
+.custom-progress.completed {
+  background-color: #e8e8e8;
+}
+.custom-progress.completed .progress-bar {
+  background-color: #0dcaf0;
+}
+.custom-progress.medium {
+  background-color: #e8e8e8;
+}
+.custom-progress.medium .progress-bar {
+  background-color: #f4983c;
+}
+.custom-progress.low {
+  background-color: #e8e8e8;
+}
+.custom-progress.low .progress-bar {
+  background-color: #24d164;
+}
+/* ==================== CUSTOM PROGRESS BAR ====================== */
+.cbii-dashboard-custom-bg {
+  background: var(--bg-card);
+  padding: 15px;
+  border-radius: 16px;
+}
+.cbii-dashboard-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: var(--sidebar-text-projet);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.cbii-dashboard-project-card {
+  background: var(--bg-sub-card);
+  gap: 0px;
+  border-radius: 12px;
+  padding: 15px;
+}
+.cbii-dashboard-project-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.cbii-dashboard-project-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: var(--sidebar-text-projet);
+}
+.cbii-dashboard-project-btn-action,
+.cbii-dashboard-project-btn-action-toggle {
+  background: none;
+  border: none;
+  color: #a6a6a6;
+  padding: 2px;
+}
+.cbii-dashboard-project-stats span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  color: var(--sidebar-text-projet);
+}
+.cbii-dashboard-project-stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: #a6a6a6;
+}
+.CircularProgressbar-path {
+  stroke: #0dcaf0 !important;
+}
+.CircularProgressbar-trail {
+  stroke: #f5f5f5 !important;
+}
+.cbii-dashboard-progress-circulair-label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: center;
+  color: #a6a6a6;
+}
+.cbii-dashboard-progress-circulair-value {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #121212;
+}
+.cbii-dashboard-progress-circulair-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+  color: #a6a6a6;
+}
+.cbii-dashboard-progress-circulair-legend span {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+  color: #121212;
+}
+.cbii-dashboard-last-challenge-card {
+  box-shadow: 0px 2px 4px 0px #0000000a;
+  /* box-shadow: 0px 1px 1px 0px #00000005; */
+}
+.cbii-dashboard-last-challenge-card-img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cbii-dashboard-last-challenge-card-img-container {
+  position: relative;
+}
+.cbii-dashboard-last-challenge-card-img-btn {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  padding: 4.48px 15.19px;
+  gap: 6.48px;
+  border-radius: 25.9px;
+  opacity: 0px;
+  border: 0.65px solid #ffffff;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.cbii-dashboard-last-challenge-card-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: var(--sidebar-text-projet);
+}
+.cbii-dashboard-last-challenge-card-category-badge {
+  padding: 4px 12px;
+  gap: 10px;
+  border-radius: 22px;
+  background: #e8503a0f;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #e8503a;
+}
+.cbii-dashboard-last-challenge-card-category-badge-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cbii-dashboard-last-challenge-card-title-category-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.cbii-dashboard-last-challenge-card-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #7a7a7a;
+}
+.cbii-dashboard-last-challenge-card-value span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #0dcaf0;
+}
+.cbii-dashboard-last-challenge-card-value {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #7a7a7a;
+}
+
+.cbii-dashboard-last-challenge-card-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ============================== */
+.participant-counter {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.participant-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+  margin-right: -8px;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #4a90e2, #8e44ad);
+}
+
+.participant-count {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: var(--sidebar-text-projet);
+  padding: 4px 12px;
+  gap: 10px;
+  border-radius: 22px;
+  /* background: var(--hover-nav-sidebar); */
+}
+
+.counter-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 12px 0;
+}
+
+.challenge-stats {
+  display: flex;
+  align-items: center;
+}
+
+.challenge-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.amount-raised {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.raised-text {
+  font-size: 14px;
+  color: #666;
+  margin-left: 4px;
+}
+
+/* ============================== */
+.cbii-dashboard-challenge-card-title {
+  color: var(--sidebar-text-projet);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+.cbii-dashboard-challenge-card-description {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  color: #7a7a7a;
+}
+.cbii-dashboard-challenge-card-value {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  color: #7a7a7a;
+}
+.cbii-dashboard-challenge-card-value span {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  color: #0dcaf0;
+}
+.cbii-dashboard-challenge-card-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.cbii-dashboard-challenge-card-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  color: #a6a6a6;
+}
+.cbii-dashboard-challenge-card-logo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}

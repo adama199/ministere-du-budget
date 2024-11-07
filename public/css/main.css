@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.admin table thead tr th {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #aab2c8;
+}
+.admin table tbody tr td,
+.admin table tbody tr td p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #263238;
+}
+.admin .table thead tr th,
+.admin .table tbody tr td {
+  text-align: left;
+  vertical-align: middle;
+}
+.admin .table tbody tr {
+  background: #f5f6fa;
+  border-radius: 10px;
+  border-bottom: 15px solid #fff;
+}
+.admin .table {
+  border: transparent;
+}
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(33, 35, 42, 0.7);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* ========= CUSTOM BREADCRUMB ========== */
+.praticien-breadcamb-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-title-page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.breadcrumb-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.breadcrumb-navlink {
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #aaaaaa;
+}
+.custom-bread-color {
+  color: #aaaaaa !important;
+}
+.breadcrumb-navlink:hover {
+  color: #aaaaaa;
+  font-weight: 600;
+}
+.breadcrumb-current-page {
+  margin-bottom: 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #6741ff;
+}
+.title-page-head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+
+  opacity: 0.7;
+}
+.btn-theme-head-page {
+  background: #68d5c4;
+  border-radius: 10px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding: 15px;
+}
+/* ========= END CUSTOM BREADCRUMB ========== */
+
+/* ========= CUSTOM FORM INPUT ============= */
+.form-label-modal-custom {
+  display: flex;
+  justify-content: flex-start;
+
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  color: #444150 !important;
+}
+
+.input-modal-form-add-group {
+  background: #f2f3f3 !important;
+  border: none !important;
+  border-radius: none !important;
+  letter-spacing: 0.03em !important;
+  height: 50px !important;
+
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #444150 !important;
+}
+
+.form-control-modal-custom {
+  padding: 10px !important;
+
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 6px !important;
+
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #444150 !important;
+}
+.form-select-modal-custom {
+  padding: 10px !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 6px !important;
+
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #444150 !important;
+  /* background: url(../../src/assets/icons/downI.png) 99% 47% / 13px no-repeat #fff !important; */
+}
+select.form-select.form-select-modal-custom {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444150;
+}
+.form-control-modal-custom::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444150;
+  opacity: 0.5;
+}
+.content-custom-showHideIcon {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 0px;
+  z-index: 100;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+.form-label-login {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #444150 !important;
+}
+.auth-submit-annuler {
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  letter-spacing: 0.04em !important;
+  color: #4a4a68 !important;
+}
+
+.input-modal-label-form-add {
+  color: #555 !important;
+
+  font-size: 10.175px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+.input-modal-form-add {
+  height: 60px !important;
+  border: 0.5px solid var(--bg-border-color) !important;
+  background: var(--background-color) !important;
+  padding: 10px 25px !important;
+  border-radius: 30px !important;
+
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20.3px !important;
+  text-align: left !important;
+  color: var(--text-color) !important;
+}
+.input-modal-form-add-textarea {
+  border: 0.5px solid var(--bg-border-color) !important;
+  background: var(--background-color) !important;
+  padding: 10px 25px !important;
+  border-radius: 30px !important;
+
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20.3px !important;
+  text-align: left !important;
+  color: var(--text-color) !important;
+}
+.input-modal-form-add::placeholder,
+.input-modal-form-add-textarea::placeholder {
+  font-style: normal !important;
+
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20.3px !important;
+  text-align: left !important;
+  color: #b8b8b8 !important;
+}
+/* ========= END CUSTOM FORM INPUT ============= */
+
+/* =========== CUSTOM CHECKBOX ================= */
+.switch2,
+.switch input {
+  width: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  width: 65px;
+  height: 23px;
+  background-color: #c4c4c48f;
+  display: block;
+  border-radius: 50px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: "NON";
+  width: 30px;
+  height: 96%;
+  background-color: #cf3918;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s, background-color 2s;
+}
+input:checked + .slider {
+  background-color: #c4c4c4;
+}
+input:checked + .slider::before {
+  content: "OUI";
+  background-color: #6741ff;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(calc(75px - 24px - 15px));
+}
+
+.switch2 .slider {
+  border-radius: 3px;
+}
+
+.switch2 .slider::before {
+  border-radius: 0;
+}
+/* =========== END CUSTOM CHECKBOX ================= */
+
+.files_dropzone {
+  cursor: pointer;
+}
