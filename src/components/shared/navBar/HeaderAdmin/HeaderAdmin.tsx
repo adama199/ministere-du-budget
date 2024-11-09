@@ -3,6 +3,7 @@ import SidebarMobile from "../SidebarAdmin/SidebarMobile";
 import Logo from "../../../../assets/appImages/logo-dashboard.png";
 import Avatar from "../../../../assets/appImages/avatar.png";
 import Dropdown from "react-bootstrap/Dropdown";
+import { NavLink } from "react-router-dom";
 
 const HeaderAdmin: React.FC = () => {
   return (
@@ -41,7 +42,9 @@ const HeaderAdmin: React.FC = () => {
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <Dropdown.Item href="#">Profile</Dropdown.Item>
+                        <Dropdown.Item>
+                          <NavLink className="btn" to="/admin/profil">Profile</NavLink>
+                        </Dropdown.Item>
                         <Dropdown.Item>Déconnexion</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>

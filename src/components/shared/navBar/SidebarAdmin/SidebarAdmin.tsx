@@ -52,7 +52,7 @@ function SidebarAdmin() {
                 <li className="nav-item nav-item-vertical-custom">
                   <NavLink
                     className="nav-link nav-link-vertival-custom-admin with-tooltip-menu"
-                    to="/admin/profil"
+                    to="/admin/profiles-utilisateurs"
                     data-tooltip-content="Profiles"
                   >
                     <span className="icon-container-nav-link-vertival">
@@ -108,7 +108,7 @@ function SidebarAdmin() {
                 <li className="nav-item nav-item-vertical-custom">
                   <NavLink
                     className="nav-link nav-link-vertival-custom-admin with-tooltip-menu"
-                    to="/gestion/enregistrement"
+                    to="/gestion/enregistrement_acte"
                     data-tooltip-content="Enregistrement"
                   >
                     <span className="icon-container-nav-link-vertival">
@@ -137,7 +137,7 @@ function SidebarAdmin() {
                 <li className="nav-item nav-item-vertical-custom">
                   <NavLink
                     className="nav-link nav-link-vertival-custom-admin with-tooltip-menu"
-                    to="/gestion/encaissement"
+                    to="/gestion/encaissements"
                     data-tooltip-content=" Encaissement"
                   >
                     <span className="icon-container-nav-link-vertival">
