@@ -3,6 +3,8 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/appImages/logo.png";
 import "./Login.css"
+import { MdEmail } from "react-icons/md";
+import { FaLock } from "react-icons/fa";
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
@@ -23,7 +25,10 @@ const Login = () => {
                   <form id="auth-form">
                     <div className="row auth-form-row">
                       <div className="col-md-12 auth-input-col mb-3">
-                        <div className="auth-form-group">
+                        <div className="auth-form-group position-relative">
+                          <span className="content-icon-login-input">
+                          <MdEmail />
+                          </span>
                           <input
                             type={`email`}
                             className="form-control auth-form-control"
@@ -35,6 +40,9 @@ const Login = () => {
                       </div>
                       <div className="col-md-12 auth-input-col mb-2">
                         <div className="auth-form-group position-relative">
+                        <span className="content-icon-login-input">
+                          <FaLock />
+                          </span>
                           <input
                             type={showPassword ? "text" : "password"}
                             className="form-control auth-form-control"

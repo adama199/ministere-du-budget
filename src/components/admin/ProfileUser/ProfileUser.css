@@ -1,0 +1,129 @@
+.leader-auto-user-avatar-container {
+    position: relative;
+}
+.leader-auto-user-avatar-edit-hover {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 16%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.leader-auto-user-avatar-container:hover .leader-auto-user-avatar-edit-hover {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+.input-add-avatar {
+    display: none;
+}
+.input-testt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pp-profil-user-visiteur {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.workcare-dash-item-page-container {
+    position: relative;
+}
+
+.leader-auto-user-avatar-edit-hover-deux {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    color: #ffffff;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 50%;
+}
+.leader-auto-user-avatar-container:hover
+    .leader-auto-user-avatar-edit-hover-deux {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+.leader-auto-user-avatar-edit-hover-deux-profil {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 6%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    color: #ffffff;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.leader-auto-user-avatar-container:hover
+    .leader-auto-user-avatar-edit-hover-deux-profil {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+.edit-avatar-camera-icon {
+    font-size: 26px;
+}
+.medsain-mon-profil-img {
+    border-radius: 6px;
+    object-fit: cover;
+    width: 182px;
+    height: 100%;
+}
+
+.form-control-input-formule.color-input {
+    padding: 5px 25px;
+    height: 40px;
+}
+.labelprofile-admin {
+    color: #5a5a5a;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.form-control-input-formule.color-input {
+    padding: 5px 25px;
+    height: 40px;
+}
+.img-pp-user-profil-connect {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.last_name-and-first_name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+    text-align: center;
+}
+.custom-detail-item {
+    display: flex;
+    justify-content: center;
+}

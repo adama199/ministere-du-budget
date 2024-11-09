@@ -74,7 +74,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputPropsType>(
         <div className={`${customClassContainer ? customClassContainer : "mb-3"}`}>
           {label && <label
             htmlFor={id}
-            className={`form-label form-label-modal-custom ${customClassLabel}`}
+            className={`form-label ${customClassLabel}`}
             aria-labelledby={id}
           >
             {label}
@@ -85,7 +85,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputPropsType>(
             )}
           </label>}
           <input
-            className={`form-control form-control-modal-custom ${customClassInput}`}
+            className={`form-control  ${customClassInput}`}
             name={name}
             id={id}
             ref={ref}

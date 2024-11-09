@@ -1,10 +1,13 @@
 import React from "react";
+import "./HeaderGestion.css";
 import SidebarMobile from "../SidebarAdmin/SidebarMobile";
+import "../SidebarAdmin/SidebarAdmin.css";
 import Logo from "../../../../assets/appImages/logo-dashboard.png";
 import Avatar from "../../../../assets/appImages/avatar.png";
 import Dropdown from "react-bootstrap/Dropdown";
+import { NavLink } from "react-router-dom";
 
-const HeaderAdmin: React.FC = () => {
+const HeaderGestion: React.FC = () => {
   return (
     <div className="admin-header-component">
       <nav className="empty-fluidy alling-header navbar navbar-expand-md navbar-dark fixed-top">
@@ -13,9 +16,15 @@ const HeaderAdmin: React.FC = () => {
         </div>
         <div className="headering-admin d-flex justify-content-between">
           <div className="headering-admin-page-title">
-          Portail d'Administration
+            Gestion des Droits Enregistrements
           </div>
           <div className="header-others-items-container">
+            <div className="container-nav-menu-header">
+              <NavLink to="/gestion/support" className="btn btn-nav-menu-header">Support</NavLink>
+              <NavLink to="/gestion/a-propos" className="btn btn-nav-menu-header">A propos</NavLink>
+              <NavLink to="/gestion/contact" className="btn btn-nav-menu-header">Contact</NavLink>
+              <NavLink to="/gestion/cgu" className="btn btn-nav-menu-header">Condition générale d'utilisation</NavLink>
+            </div>
             <div className="header-others-items">
               <div className="container-info-user-connect-header">
                 <div
@@ -63,4 +72,4 @@ const HeaderAdmin: React.FC = () => {
   );
 };
 
-export default HeaderAdmin;
+export default HeaderGestion;

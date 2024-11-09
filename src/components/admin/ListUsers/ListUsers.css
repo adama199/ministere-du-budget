@@ -1,0 +1,625 @@
+/* ===================== CUSTOM TAB ========================= */
+.tabs-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 0;
+    border-top: 1px solid #d9d9d9;
+  }
+  
+  .tab-active-item {
+    font-style: normal;
+    padding: 10px;
+  
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    color: #0dcaf0 !important;
+  }
+  
+  .parametre-tabs-container-admin .param-tab-item {
+    text-align: center;
+    font-style: normal;
+    padding: 5px 14px 10px;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+  
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #7a7a7a;
+  }
+  
+  .bottom_separator {
+    width: 95%;
+    margin: 0 auto 0 0;
+    height: 1px;
+    background: #d9d9d9;
+  }
+  
+  .active-param-tab {
+    color: #0dcaf0 !important;
+  }
+  .active-param-tab:after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 4px;
+    background: #0dcaf0;
+  }
+  
+  .admin-settings-tabs-main-content {
+    padding-top: 2rem;
+  }
+  .cbii-tab-container {
+    margin-top: -40px;
+    background: var(--background-color);
+    padding: 9px 32px 0px 32px;
+    width: 106%;
+    margin-left: -42px;
+  }
+  /* ===================== END CUSTOM TAB ========================= */
+  .cbii-project-card {
+    padding: 18px 16px;
+    gap: 24px;
+    border-radius: 12px;
+    background: var(--background-color);
+    border: 1px solid var(--bg-border-color);
+  }
+  .cbii-project-card-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .cbii-project-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+  }
+  .cbii-project-card-title-btn-action,
+  .cbii-project-card-title-btn-action:hover,
+  .cbii-project-card-title-btn-action:focus,
+  .cbii-project-card-title-btn-action:focus-visible {
+    background: none;
+    border: none;
+    color: #a6a6a6;
+  }
+  .cbii-project-card-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    gap: 4px;
+    border-radius: 8px;
+    background: var(--bg-sub-card);
+  
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: left;
+    color: #a6a6a6;
+    width: max-content;
+  }
+  .cbii-modal-add-project-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+  }
+  .cbii-project-card-description {
+    color: #A6A6A6;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  }
+  .cbii-modal-add-project-header {
+    border-bottom: 1px solid var(--bg-dashboard);
+  }
+  /* ========================================= */
+  .auth-form-control-add,
+  .auth-form-group .phone_input__wrapper {
+    padding: 11px 16px !important;
+    gap: 10px !important;
+    border-radius: 30px !important;
+    border: 0.5px solid var(--bg-border-color) !important;
+    font-family: "Manrope" !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20.3px !important;
+    text-align: left !important;
+  }
+  .auth-form-control-add {
+    background-color: var(--background-color);
+  }
+  .auth-form-control-add::placeholder,
+  .auth-form-control-add-textarea::placeholder {
+    color: #d6d6d6 !important;
+    font-family: "Manrope" !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20.3px !important;
+    text-align: left !important;
+  }
+  .auth-form-control-add:focus {
+    border-color: #d6d6d6 !important;
+  }
+  .auth-form-control-add.no_fixed__height {
+    height: fit-content;
+    padding-left: 44px !important;
+  }
+  .auth-form-control-add-textarea {
+    border-radius: 15px;
+    background: #e0e1ec;
+  }
+  /* ========================================= */
+  .form-label-modal-add {
+    font-family: "Inter" !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 22.4px !important;
+    letter-spacing: 0.2px !important;
+    text-align: left !important;
+    color: var(--form-label) !important;
+  }
+  .custom-select-padding {
+    padding: 8px 25px !important;
+  }
+  .custom-border-radius-8 {
+    border-radius: 8px !important;
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    -ms-border-radius: 8px !important;
+    -o-border-radius: 8px !important;
+  }
+  .cbii-modal-add-project-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .projet-stats-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .projet-stats-item {
+    flex: 1;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .projet-stats-item:not(:last-child) {
+    border-right: 2px solid #e2e8f0;
+  }
+  
+  .projet-stats-label {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: #a6a6a6;
+    margin-bottom: 8px;
+  }
+  
+  .projet-stats-value {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--sidebar-text-projet);
+  }
+  
+  .cbii-details-projet-description,
+  .cbii-details-projet-description p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #a6a6a6;
+  }
+  /* .cbii-details-projet-tab-etapes-accordion-container {
+    background: red;
+  } */
+  .cbii-details-projet-tab-etapes-accordion-container .accordion-item,
+  .cbii-details-projet-tab-etapes-accordion-container
+    button.accordion-button.collapsed,
+  .cbii-details-projet-tab-etapes-accordion-container button.accordion-button {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+  .cbii-details-projet-tab-etapes-accordion-container button.accordion-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+  }
+  .cbii-details-projet-tab-etapes-accordion-task-title {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+  }
+  .cbii-details-projet-tab-etapes-accordion-task-description,
+  .cbii-details-projet-tab-etapes-accordion-task-description p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #a6a6a6;
+    margin-bottom: 0;
+  }
+  .cbii-details-projet-tab-etapes-accordion-header-btn-plus {
+    color: #a6a6a6;
+    background: none;
+    border: none;
+    font-size: 24px;
+  }
+  .cbii-details-projet-tab-etapes-accordion-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cbii-details-projet-tab-etapes-accordion-header-title {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+  }
+  .cbii-details-projet-tab-etapes-accordion-header-title span {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #a6a6a6;
+  }
+  .cbii-details-projet-tab-etapes-accordion-header-title.todo {
+    color: #ca1010;
+  }
+  .cbii-details-projet-tab-etapes-accordion-header-title.in-progress {
+    color: #f4983c;
+  }
+  .cbii-details-projet-tab-etapes-accordion-header-title.complete {
+    color: rgb(0, 203, 96);
+  }
+  .cbii-details-projet-tab-etapes-accordion-task-stats-icon {
+    font-size: 24px;
+  }
+  .cbii-details-projet-tab-etapes-accordion-task-stats img {
+    width: 16px;
+    height: 16px;
+  }
+  .cbii-details-projet-tab-etapes-accordion-task-stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #a6a6a6;
+  }
+  .cbii-details-projet-tab-etapes-accordion-task-stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  .cbii-details-projet-tab-etapes-accordion-task-stats.custom {
+    padding: 4px 6px;
+    gap: 10px;
+    border-radius: 22px;
+    background: var(--hover-nav-sidebar);
+  }
+  .cbii-details-projet-tab-etapes-accordion-body {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .cbii-modal-details-task-card-stats-label {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    color: #a6a6a6;
+  }
+  .cbii-modal-details-task-card-stats-value svg {
+    font-size: 16px;
+  }
+  .cbii-modal-details-task-card-stats-value {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .custom-z-index-10 {
+    z-index: 10 !important;
+  }
+  .custom-z-index-12 {
+    z-index: 12 !important;
+  }
+  .cbii-modal-details-task-description-title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+  }
+  .cbii-modal-details-task-description,
+  .cbii-modal-details-task-description p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #a6a6a6;
+  }
+  .cbii-modal-details-task-btn-filter svg {
+    font-size: 24px;
+  }
+  .cbii-modal-details-task-btn-filter {
+    border: none;
+    background: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    color: #0dcaf0;
+  }
+  .cbii-modal-details-task-activité-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cbii-details-task-modal-attach-file {
+    padding: 10px 16px 10px 10px;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--bg-dashboard);
+    display: flex;
+    align-items: center;
+  }
+  .cbii-details-task-modal-attach-file-img-container {
+    padding: 6px;
+    gap: 10px;
+    border-radius: 7px;
+    background: #e1d9ff;
+  }
+  .cbii-details-task-modal-attach-file-img {
+    width: 22px;
+    height: 22px;
+  }
+  .cbii-details-task-modal-attach-file-name {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+  }
+  .cbii-details-task-modal-attach-file-weigth {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    color: #a6a6a6;
+  }
+  .ReactModal__Content.ReactModal__Content--after-open {
+    top: 80px !important;
+  }
+  .ReactGridGallery_tile-viewport {
+    border-radius: 16px !important;
+  }
+  .cbii-details-projet-tab-media-title {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+  }
+  .cbii-details-projet-tab-media-subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #a6a6a6;
+  }
+  .cbii-details-projet-tab-documents-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* ====================== CUSTOM ASSOCIATION TABLE ========================== */
+  .admin-table thead tr {
+    border-bottom: 1px solid rgb(247, 247, 251);
+    height: 50px;
+    background: none !important;
+  }
+  .admin-table table thead tr {
+    background: var(--bg-dashboard) !important;
+  }
+  .admin-table table thead tr th {
+    background: var(--bg-dashboard) !important;
+  }
+  .admin-table table thead tr th {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: left;
+    color: #a6a6a6;
+  }
+  .admin-table table tbody tr td,
+  .admin-table table tbody tr td p {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+    background-color: var(--bg-card) !important;
+  }
+  .admin-table .table thead tr th,
+  .admin-table .table tbody tr td {
+    text-align: left;
+    vertical-align: middle;
+  }
+  .admin-table .table tbody tr {
+    background: var(--bg-card) !important;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--hover-nav-sidebar);
+    height: 70px;
+  }
+  .admin-table .table {
+    border: transparent;
+    background: var(--background-color) !important;
+  }
+  /* ====================== END CUSTOM ASSOCIATION TABLE ========================== */
+  .cbii-table-doc-name {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+  }
+  .cbii-icon-doc {
+    width: 18px;
+    height: 20.12px;
+  }
+  .cbii-table-doc-btn-more,
+  .cbii-table-doc-btn-more:hover,
+  .cbii-table-doc-btn-more:focus {
+    background-color: none !important;
+    border-color: none !important;
+    color: #d6d6d6;
+    padding: 0px;
+  }
+  .cbii-dashboard-project-btn-action-toggle.custom,
+  .cbii-dashboard-project-btn-action-toggle.custom:hover,
+  .cbii-dashboard-project-btn-action-toggle.custom:focus {
+    background-color: none !important;
+    border-color: none !important;
+  }
+  .cbii-table-doc-btn-more svg {
+    font-size: 28px;
+  }
+  .cbii-table-doc-btn-more-menu.dropdown-menu.show {
+    background: var(--background-color);
+    box-shadow: 0px 5.85px 11.7px 0px #a5a3ae66;
+    border: none;
+    gap: 12px;
+  }
+  .cbii-table-doc-btn-more-item {
+    font-family: "Public Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.88px;
+    text-align: left;
+    color: #0dcaf0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .cbii-table-doc-btn-more-item svg {
+    font-size: 8px;
+  }
+  .btn-edit-profil-user, .btn-edit-profil-user:hover {
+    color: #198754;
+ }
+ .btn-edit-password-user, .btn-edit-password-user:hover {
+    color: #dc3545;
+ }
+ .prev-button,
+.next-button {
+  padding: 10px 50px;
+  border-radius: 40px;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.prev-button {
+  background-color: var(--hover-nav-sidebar);
+  color: var(--sidebar-text-projet);
+  border: 1px solid #0dcaf0;
+}
+
+.next-button {
+  background-color: #0dcaf0;
+  color: #ffffff;
+  border: 1px solid #0dcaf0;
+}
+.prev-button:hover {
+  background-color: var(--bg-sub-card);
+  color: #0dcaf0;
+  border: 1px solid #0dcaf0;
+}
+
+.next-button:hover {
+  background-color: var(--hover-nav-sidebar);
+  color: #0dcaf0;
+  border: 1px solid #0dcaf0;
+}
+.select-form-add-user {
+    background: url(../../../assets/icons/chevron_left.png) 96% 50% / 13px no-repeat
+    #E6F3F0;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    background: #E6F3F0;
+    border-radius: 5px;
+    padding: 15px 15px 15px 45px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444150;
+  display: inline-block;
+  width: 100%;
+}
+
+.inputfile + label {
+	cursor: pointer;
+}
+.upload-file-auth {
+  color: #0dcaf0;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.label-checkbox {
+    color: var(--sidebar-text-projet);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: -2px;
+  }

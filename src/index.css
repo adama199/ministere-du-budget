@@ -404,7 +404,7 @@ li.page-item a.active {
   min-width: max-content !important;
   border: none !important;
 }
-.association-table .table tbody tr:hover {
+.admin-table .table tbody tr:hover {
   background-color: #F0ECFF !important;
 }
 .header-custom-projet-status-indicator-container {
