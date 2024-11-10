@@ -217,7 +217,7 @@ function SidebarAdmin() {
                 <li className="nav-item nav-item-vertical-custom">
                   <NavLink
                     className="nav-link nav-link-vertival-custom-admin with-tooltip-menu"
-                    to="/gestion/administration"
+                    to="/admin/utilisateurs"
                     data-tooltip-content="Administration"
                   >
                     <span className="icon-container-nav-link-vertival">
