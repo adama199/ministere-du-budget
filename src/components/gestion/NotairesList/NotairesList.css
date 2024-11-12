@@ -1,0 +1,66 @@
+.btn-action-modal-icon {
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.btn-action-modal-icon::after {
+    content: attr(data-tooltip-content);
+    padding: 8px;
+    border-radius: 4px;
+    position: absolute;
+    top: 77%;
+    right: 50%;
+    left: 50%;
+    width: max-content;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 18px) scale(0.8);
+    transition: visibility, opacity, transform 200ms;
+    -webkit-transform: translate(-50%, 18px) scale(0.8);
+    -moz-transform: translate(-50%, 18px) scale(0.8);
+    -ms-transform: translate(-50%, 18px) scale(0.8);
+    -o-transform: translate(-50%, 18px) scale(0.8);
+}
+.with-tooltip {
+    position: relative;
+}
+.with-tooltip:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+.btn-see-detail-table,
+.btn-see-detail-table:hover {
+    background: rgba(2, 180, 192, 0.22);
+    color: #158a91 !important;
+}
+.btn-see-detail-table::after {
+    color: #158a91 !important;
+}
+.btn-edit-cell-table,
+.btn-edit-cell-table:hover {
+    background: rgba(41, 150, 229, 0.22);
+    color: #2996e5 !important;
+}
+.btn-edit-cell-table::after {
+    color: #2996e5 !important;
+}
+.btn-delete-cell-table,
+.btn-delete-cell-table:hover {
+    background: #fa141415;
+    color: #fa1414 !important;
+}
+.btn-delete-cell-table::after {
+    color: #fa1414;
+}

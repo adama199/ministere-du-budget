@@ -1,0 +1,20 @@
+.title-registre-type-libele {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--sidebar-text-projet);
+}
+.list-libelle-registre-item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--sidebar-text-projet);
+    border-top: 1px solid var(--bg-border-color);
+    padding: 12px 0;
+    cursor: pointer;
+}
+.list-libelle-registre-item:last-child {
+    border-bottom: 1px solid var(--bg-border-color);
+}

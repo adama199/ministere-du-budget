@@ -15,6 +15,10 @@ import MessageConfirmation from "../components/auth/MessageConfirmation";
 import EnregistrementsActes from "../components/gestion/EnregistrementActes/EnregistrementsActes";
 import Encaissements from "../components/gestion/Encaissements/Encaissements";
 import PartiesList from "../components/gestion/PartiesList/PartiesList";
+import NotairesList from "../components/gestion/NotairesList/NotairesList";
+import NatureActe from "../components/gestion/NatureActe/NatureActe";
+import RegistreType from "../components/gestion/RegistreType/RegistreType";
+import Rapports from "../components/gestion/Rapports/Rapports";
 export const AppRoutes = [
   {
     path: "/",
@@ -56,6 +60,22 @@ export const AppRoutes = [
       {
         path: "parties",
         element: <PartiesList />,
+      },
+      {
+        path: "notaires",
+        element: <NotairesList />,
+      },
+      {
+        path: "nature-acte",
+        element: <NatureActe />,
+      },
+      {
+        path: "les-registres",
+        element: <RegistreType />,
+      },
+      {
+        path: "rapports",
+        element: <Rapports />,
       },
     ],
   },

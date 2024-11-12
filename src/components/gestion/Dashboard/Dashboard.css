@@ -246,7 +246,7 @@
   line-height: 40.965px;
 }
 .custom-calendar-btn-voir-tout {
-  color: var(--bleu-clair, #36c8ff);
+  color: #36c8ff;
 
   font-size: 12.29px;
   font-style: normal;
@@ -260,7 +260,7 @@
   justify-content: space-between;
 }
 .custom-calendar-title-rdv {
-  color: var(--dmv-black, #23262f);
+  color: #23262f;
 
   font-size: 16.386px;
   font-style: normal;
