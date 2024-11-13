@@ -1,26 +1,34 @@
 import React from "react";
-import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { NavLink, useLocation } from "react-router-dom";
-import { FaPlus, FaUserFriends } from "react-icons/fa";
-import { BiCategory, BiUser } from "react-icons/bi";
-import { CiMail } from "react-icons/ci";
-import { AiOutlineCalendar } from "react-icons/ai";
-import { IoLogOutOutline } from "react-icons/io5";
-import { TbUsers, TbYoga } from "react-icons/tb";
-import { MdOutlineContactMail } from "react-icons/md";
-import { GiBodyHeight } from "react-icons/gi";
+import {
+  FaBalanceScale,
+  FaFileSignature,
+  FaFolderOpen,
+  FaReceipt,
+  FaRegFileAlt,
+  FaSortAmountUp,
+  FaUsers,
+  FaUsersCog,
+} from "react-icons/fa";
+import { BiCategory, BiSolidUserRectangle } from "react-icons/bi";
+import { FaMoneyBillTrendUp, FaUsersBetweenLines } from "react-icons/fa6";
+import { MdAutoDelete } from "react-icons/md";
+import { BsFileCheckFill } from "react-icons/bs";
 import { PiMoonStarsFill } from "react-icons/pi";
-import { FaSquarePlus } from "react-icons/fa6";
+import { IoLogOutOutline } from "react-icons/io5";
+import { AiOutlineMenuUnfold } from "react-icons/ai";
+import DarkModeToggle from "./DarkModeTogal";
 
 const SidebarMobile = () => {
   const location = useLocation();
-  const [modalShow, setModalShow] = React.useState(false);
   return (
     <div>
       <div className="container-nav">
         <input type="checkbox" id="check" />
         <label htmlFor="check">
-          <AiOutlineMenuUnfold />
+          <span className="color-label-icon-menu-mobile">
+            <AiOutlineMenuUnfold />
+          </span>
           <i className="fas fa-times" id="cancel"></i>
         </label>
         <div className="sidebar" id="scrollbar-nav-mobile">
@@ -31,87 +39,90 @@ const SidebarMobile = () => {
                   <li className="nav-item nav-item-vertical-custom">
                     <NavLink
                       className="nav-link nav-link-vertival-custom-admin"
-                      to="/admin/dashboard"
+                      to="/admin/utilisateurs"
                     >
-                      <BiCategory />
+                      <FaUsers />
                       <span className="item-nav-menu drop-header">
-                        Dashboard
+                        Utilisateurs
                       </span>
                     </NavLink>
                   </li>
                   <li className="nav-item nav-item-vertical-custom">
                     <NavLink
                       className="nav-link nav-link-vertival-custom-admin"
-                      to="/admin/medecins"
+                      to="/admin/profiles-utilisateurs"
                     >
-                      <FaUserFriends />
+                      <BiSolidUserRectangle />
                       <span className="item-nav-menu drop-header">
-                        Medecins
+                        Profiles
                       </span>
                     </NavLink>
                   </li>
                   <li className="nav-item nav-item-vertical-custom">
                     <NavLink
                       className="nav-link nav-link-vertival-custom-admin"
-                      to="/admin/patientes"
+                      to="/admin/affectations-registre"
                     >
-                      <FaUserFriends />
+                      <BsFileCheckFill />
                       <span className="item-nav-menu drop-header">
-                        Patientes
+                        Affectations de Registre
                       </span>
                     </NavLink>
                   </li>
                   <li className="nav-item nav-item-vertical-custom">
                     <NavLink
                       className="nav-link nav-link-vertival-custom-admin"
-                      to="/admin/tailles-poids"
+                      to="/admin/historiques"
                     >
-                      <GiBodyHeight />
-                      <span className="item-nav-menu drop-header">Tailles</span>
-                    </NavLink>
-                  </li>
-                  <li className="nav-item nav-item-vertical-custom">
-                    <NavLink
-                      className="nav-link nav-link-vertival-custom-admin"
-                      to="/admin/messages"
-                    >
-                      <CiMail />
+                      <FaSortAmountUp />
                       <span className="item-nav-menu drop-header">
-                        Messages
-                      </span>
-                    </NavLink>
-                  </li>
-                  <li className="nav-item nav-item-vertical-custom">
-                    <NavLink
-                      className="nav-link nav-link-vertival-custom-admin"
-                      to="/admin/forum"
-                    >
-                      <FaUserFriends />
-                      <span className="item-nav-menu drop-header">Forum</span>
-                    </NavLink>
-                  </li>
-                  <li className="nav-item nav-item-vertical-custom">
-                    <NavLink
-                      className="nav-link nav-link-vertival-custom-admin"
-                      to="/admin/messages-contact"
-                    >
-                      <MdOutlineContactMail />
-                      <span className="item-nav-menu drop-header">
-                        Messages de contact
+                        {" "}
+                        Historique des mvt
                       </span>
                     </NavLink>
                   </li>
                 </>
               )}
-              {location?.pathname?.startsWith("/association") && (
+              {location?.pathname?.startsWith("/gestion") && (
                 <>
-                  <div className="challenge-sidebar-subtitle my-3">
-                    CHALLENGES
+                  <div className="container-nav-menu-header ">
+                    <div>
+                      <NavLink
+                        to="/gestion/support"
+                        className="btn btn-nav-menu-header"
+                      >
+                        Support
+                      </NavLink>
+                    </div>
+                    <div>
+                      <NavLink
+                        to="/gestion/a-propos"
+                        className="btn btn-nav-menu-header"
+                      >
+                        A propos
+                      </NavLink>
+                    </div>
+                    <div>
+                      <NavLink
+                        to="/gestion/contact"
+                        className="btn btn-nav-menu-header"
+                      >
+                        Contact
+                      </NavLink>
+                    </div>
+                    <div>
+                      <NavLink
+                        to="/gestion/cgu"
+                        className="btn btn-nav-menu-header"
+                      >
+                        Condition générale d'utilisation
+                      </NavLink>
+                    </div>
                   </div>
                   <li className="nav-item nav-item-vertical-custom">
                     <NavLink
                       className="nav-link nav-link-vertival-custom-admin"
-                      to="/association/dashboard"
+                      to="/gestion/dashboard"
                     >
                       <span className="icon-container-nav-link-vertival">
                         <BiCategory />
@@ -124,135 +135,130 @@ const SidebarMobile = () => {
                   <li className="nav-item nav-item-vertical-custom">
                     <NavLink
                       className="nav-link nav-link-vertival-custom-admin"
-                      to="/association/challenge-en-cours"
+                      to="/gestion/enregistrement_acte"
                     >
                       <span className="icon-container-nav-link-vertival">
-                        <TbUsers />
+                        <FaRegFileAlt />
                       </span>
-                      <span className="hiddenable-navlink-label">En cours</span>
+                      <span className="hiddenable-navlink-label">
+                        Enregistrement
+                      </span>
                     </NavLink>
                   </li>
                   <li className="nav-item nav-item-vertical-custom">
                     <NavLink
                       className="nav-link nav-link-vertival-custom-admin"
-                      to="/association/challenge-termine"
+                      to="/gestion/enregistrement-lv-ca"
                     >
                       <span className="icon-container-nav-link-vertival">
-                        <AiOutlineCalendar />
+                        <FaRegFileAlt />
                       </span>
-                      <span className="hiddenable-navlink-label">Terminés</span>
+                      <span className="hiddenable-navlink-label">
+                        Enregistrement LV-CA
+                      </span>
                     </NavLink>
                   </li>
                   <li className="nav-item nav-item-vertical-custom">
                     <NavLink
                       className="nav-link nav-link-vertival-custom-admin"
-                      to="/association/rapports"
+                      to="/gestion/encaissements"
                     >
                       <span className="icon-container-nav-link-vertival">
-                        <TbYoga />
+                        <FaMoneyBillTrendUp />
+                      </span>
+                      <span className="hiddenable-navlink-label">
+                        Encaissement
+                      </span>
+                    </NavLink>
+                  </li>
+                  <li className="nav-item nav-item-vertical-custom">
+                    <NavLink
+                      className="nav-link nav-link-vertival-custom-admin"
+                      to="/gestion/parties"
+                    >
+                      <span className="icon-container-nav-link-vertival">
+                        <FaUsersBetweenLines />
+                      </span>
+                      <span className="hiddenable-navlink-label">Parties</span>
+                    </NavLink>
+                  </li>
+                  <li className="nav-item nav-item-vertical-custom">
+                    <NavLink
+                      className="nav-link nav-link-vertival-custom-admin"
+                      to="/gestion/notaires"
+                    >
+                      <span className="icon-container-nav-link-vertival">
+                        <FaBalanceScale />
+                      </span>
+                      <span className="hiddenable-navlink-label">Notaires</span>
+                    </NavLink>
+                  </li>
+                  <li className="nav-item nav-item-vertical-custom">
+                    <NavLink
+                      className="nav-link nav-link-vertival-custom-admin"
+                      to="/gestion/nature-acte"
+                    >
+                      <span className="icon-container-nav-link-vertival">
+                        <FaFileSignature />
+                      </span>
+                      <span className="hiddenable-navlink-label">
+                        Nature d'acte
+                      </span>
+                    </NavLink>
+                  </li>
+                  <li className="nav-item nav-item-vertical-custom">
+                    <NavLink
+                      className="nav-link nav-link-vertival-custom-admin"
+                      to="/gestion/les-registres"
+                    >
+                      <span className="icon-container-nav-link-vertival">
+                        <FaFolderOpen />
+                      </span>
+                      <span className="hiddenable-navlink-label">
+                        Les Registres
+                      </span>
+                    </NavLink>
+                  </li>
+                  <li className="nav-item nav-item-vertical-custom">
+                    <NavLink
+                      className="nav-link nav-link-vertival-custom-admin"
+                      to="/gestion/rapports"
+                    >
+                      <span className="icon-container-nav-link-vertival">
+                        <FaReceipt />
                       </span>
                       <span className="hiddenable-navlink-label">Rapports</span>
                     </NavLink>
                   </li>
-                  <hr className="challenge-custom-hr-sidebar m-3" />
-                  <div className="d-flex align-items-center justify-content-between  position-relative">
+                  <li className="nav-item nav-item-vertical-custom">
                     <NavLink
-                      className="challenge-sidebar-subtitle my-3 nav-link nav-link-vertival-custom-admin w-100"
-                      to="/association/projets"
-                      style={{ zIndex: "1" }}
+                      className="nav-link nav-link-vertival-custom-admin"
+                      to="/admin/utilisateurs"
                     >
-                      Projets
+                      <span className="icon-container-nav-link-vertival">
+                        <FaUsersCog />
+                      </span>
+                      <span className="hiddenable-navlink-label">
+                        Administration
+                      </span>
                     </NavLink>
-                    <button
-                      onClick={() => setModalShow(true)}
-                      className="btn custom-btn-add-project"
-                      style={{ zIndex: "10" }}
+                  </li>
+                  <li className="nav-item nav-item-vertical-custom">
+                    <NavLink
+                      className="nav-link nav-link-vertival-custom-admin"
+                      to="/gestion/archive-des-registres"
                     >
-                      <FaPlus />
-                    </button>
-                  </div>
-                  <div className="challenge-sidebar-project-container">
-                    <li className="nav-item nav-item-vertical-custom">
-                      <NavLink
-                        className="nav-link nav-link-vertival-custom-admin px-1"
-                        to="/association/projets/:slug"
-                      >
-                        <div className="challenge-sidebar-project-item">
-                          <div className="challenge-sidebar-project-indicator"></div>
-                          <div className="challenge-sidebar-project-name">
-                            Ecole manguiers <span>(59%)</span>
-                          </div>
-                        </div>
-                      </NavLink>
-                    </li>
-                    <li className="nav-item nav-item-vertical-custom">
-                      <NavLink
-                        className="nav-link nav-link-vertival-custom-admin px-0"
-                        to="/association/projets/:slug"
-                      >
-                        <div className="challenge-sidebar-project-item">
-                          <div className="challenge-sidebar-project-indicator"></div>
-                          <div className="challenge-sidebar-project-name">
-                            Forage Keur Massar <span>(59%)</span>
-                          </div>
-                        </div>
-                      </NavLink>
-                    </li>
-                    <li className="nav-item nav-item-vertical-custom">
-                      <NavLink
-                        className="nav-link nav-link-vertival-custom-admin px-0"
-                        to="/association/projets/:slug"
-                      >
-                        <div className="challenge-sidebar-project-item">
-                          <div className="challenge-sidebar-project-indicator"></div>
-                          <div className="challenge-sidebar-project-name">
-                            Puit de l’espoir <span>(59%)</span>
-                          </div>
-                        </div>
-                      </NavLink>
-                    </li>
-                    <li className="nav-item nav-item-vertical-custom">
-                      <NavLink
-                        className="nav-link nav-link-vertival-custom-admin px-0"
-                        to="/association/projets/:slug"
-                      >
-                        <div className="challenge-sidebar-project-item">
-                          <div className="challenge-sidebar-project-indicator"></div>
-                          <div className="challenge-sidebar-project-name">
-                            Une maison pour tous <span>(59%)</span>
-                          </div>
-                        </div>
-                      </NavLink>
-                    </li>
-                    <div className="mt-5">
-                      <NavLink
-                        to="/association/nouveau-challenge"
-                        className="btn btn-theme-body-page w-100"
-                      >
-                        <span>
-                          <FaSquarePlus />
-                        </span>{" "}
-                        Créer un challenge
-                      </NavLink>
-                    </div>
-                  </div>
-
+                      <span className="icon-container-nav-link-vertival">
+                        <MdAutoDelete />
+                      </span>
+                      <span className="hiddenable-navlink-label">
+                        Archive des registres
+                      </span>
+                    </NavLink>
+                  </li>
                 </>
               )}
-              <li className="nav-item nav-item-vertical-custom pt-5">
-                <div className="nav-link nav-link-vertival-custom-admin align-items-center">
-                  <span className="icon-container-nav-link-vertival">
-                    <PiMoonStarsFill />
-                  </span>
-                  <span className="hiddenable-navlink-label">Dark Mode</span>
-                  <div className="content-switch-cookies">
-                    <label className="switch-btn">
-                      <input type="checkbox" />
-                      <span></span>
-                    </label>
-                  </div>
-                </div>
-              </li>
+              <DarkModeToggle />
               <li className="nav-item nav-item-vertical-custom pt-5">
                 <button className="btn nav-link nav-link-vertival-custom-admin sidebar-logout-btn">
                   <IoLogOutOutline />

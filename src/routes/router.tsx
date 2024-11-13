@@ -19,6 +19,13 @@ import NotairesList from "../components/gestion/NotairesList/NotairesList";
 import NatureActe from "../components/gestion/NatureActe/NatureActe";
 import RegistreType from "../components/gestion/RegistreType/RegistreType";
 import Rapports from "../components/gestion/Rapports/Rapports";
+import AddEngeregistrement from "../components/gestion/EnregistrementActes/AddEngeregistrement";
+import EnregistrementsLVCA from "../components/gestion/EnregistrementsLVCA/EnregistrementsLVCA";
+import Support from "../components/gestion/Pages/Support";
+import Apropos from "../components/gestion/Pages/Apropos";
+import Contact from "../components/gestion/Pages/Contact";
+import Cgu from "../components/gestion/Pages/Cgu";
+import ArchivesRegistres from "../components/gestion/ArchivesRegistres/ArchivesRegistres";
 export const AppRoutes = [
   {
     path: "/",
@@ -76,6 +83,34 @@ export const AppRoutes = [
       {
         path: "rapports",
         element: <Rapports />,
+      },
+      {
+        path: "nouvel-enregistrement",
+        element: <AddEngeregistrement />,
+      },
+      {
+        path: "enregistrement-lv-ca",
+        element: <EnregistrementsLVCA />,
+      },
+      {
+        path: "archive-des-registres",
+        element: <ArchivesRegistres />,
+      },
+      {
+        path: "support",
+        element: <Support />,
+      },
+      {
+        path: "a-propos",
+        element: <Apropos />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "cgu",
+        element: <Cgu />,
       },
     ],
   },

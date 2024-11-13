@@ -19,7 +19,7 @@ const HeaderGestion: React.FC = () => {
             Gestion des Droits Enregistrements
           </div>
           <div className="header-others-items-container">
-            <div className="container-nav-menu-header">
+            <div className="container-nav-menu-header no-view-mobile">
               <NavLink to="/gestion/support" className="btn btn-nav-menu-header">Support</NavLink>
               <NavLink to="/gestion/a-propos" className="btn btn-nav-menu-header">A propos</NavLink>
               <NavLink to="/gestion/contact" className="btn btn-nav-menu-header">Contact</NavLink>

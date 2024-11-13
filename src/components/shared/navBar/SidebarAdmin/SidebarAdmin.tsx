@@ -4,11 +4,9 @@ import {
   FaBalanceScale,
   FaFileSignature,
   FaFolderOpen,
-  FaPlus,
   FaReceipt,
   FaRegFileAlt,
   FaSortAmountUp,
-  FaUserFriends,
   FaUsers,
   FaUsersCog,
 } from "react-icons/fa";
@@ -183,7 +181,6 @@ function SidebarAdmin() {
                       <FaFileSignature />
                     </span>
                     <span className="hiddenable-navlink-label">
-                      {" "}
                       Nature d'acte
                     </span>
                   </NavLink>

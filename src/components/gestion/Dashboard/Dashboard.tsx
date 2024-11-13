@@ -7,16 +7,13 @@ import LineChartReceveur from "./LineChart/LineChartReceveur";
 import BarChartDash from "./LineChart/BarChartDash";
 
 function Dashboard() {
-
   return (
     <div className="dashbord-admin-component">
       <div className="dash-admin-page-content-container mb-3">
         <div className="row">
           <div className="col-md-12 mb-4">
             <div className="cbii-dashboard-custom-bg">
-              <div className="cbii-dashboard-subtitle mb-3">
-                Statistiques
-              </div>
+              <div className="cbii-dashboard-subtitle mb-3">Statistiques</div>
               <div className="row">
                 <div className="col-md-6 mb-3">
                   <div className="cbii-dashboard-project-card">
@@ -25,7 +22,12 @@ function Dashboard() {
                         <div className="cbii-dashboard-project-title">
                           Total par receveur
                         </div>
-                        <p className="chiffre-dash-data mb-0 py-2">0 <span className="ps-2">Fdj</span></p>
+                        <div className="container-total-fdj  py-2">
+                          <p className="text-total-fdj mb-0">Total :</p>
+                          <p className="chiffre-dash-data mb-0">
+                            20 <span className="ps-2">Fdj</span>
+                          </p>
+                        </div>
                         <div className="cbii-dashboard-project-stats">
                           <FaRegCheckSquare />
                           <div>
@@ -46,7 +48,12 @@ function Dashboard() {
                         <div className="cbii-dashboard-project-title">
                           Total par Encaissements
                         </div>
-                        <p className="chiffre-dash-data mb-0 py-2">0<span className="ps-2">Fdj</span></p>
+                        <div className="container-total-fdj  py-2">
+                          <p className="text-total-fdj mb-0">Total :</p>
+                          <p className="chiffre-dash-data mb-0">
+                            20 <span className="ps-2">Fdj</span>
+                          </p>
+                        </div>
                         <div className="cbii-dashboard-project-stats">
                           <FaRegCheckSquare />
                           <div>
@@ -55,19 +62,24 @@ function Dashboard() {
                         </div>
                       </div>
                       <div style={{ color: "#fd7e14", fontSize: 50 }}>
-					  <FaRectangleList />
+                        <FaRectangleList />
                       </div>
                     </div>
                   </div>
                 </div>
-				<div className="col-md-6 mb-3">
+                <div className="col-md-6 mb-3">
                   <div className="cbii-dashboard-project-card">
                     <div className="cbii-dashboard-project-title-container mb-3">
                       <div>
                         <div className="cbii-dashboard-project-title">
                           Total par receveur
                         </div>
-                        <p className="chiffre-dash-data mb-0 py-2">0<span className="ps-2">Fdj</span></p>
+                        <div className="container-total-fdj  py-2">
+                          <p className="text-total-fdj mb-0">Total :</p>
+                          <p className="chiffre-dash-data mb-0">
+                            20 <span className="ps-2">Fdj</span>
+                          </p>
+                        </div>
                         <div className="cbii-dashboard-project-stats">
                           <FaRegCheckSquare />
                           <div>
@@ -88,7 +100,12 @@ function Dashboard() {
                         <div className="cbii-dashboard-project-title">
                           Total par Encaissements
                         </div>
-                        <p className="chiffre-dash-data mb-0 py-2">0<span className="ps-2">Fdj</span></p>
+                        <div className="container-total-fdj  py-2">
+                          <p className="text-total-fdj mb-0">Total :</p>
+                          <p className="chiffre-dash-data mb-0">
+                            20 <span className="ps-2">Fdj</span>
+                          </p>
+                        </div>
                         <div className="cbii-dashboard-project-stats">
                           <FaRegCheckSquare />
                           <div>
@@ -97,7 +114,7 @@ function Dashboard() {
                         </div>
                       </div>
                       <div style={{ color: "#fd7e14", fontSize: 50 }}>
-					  <FaRectangleList />
+                        <FaRectangleList />
                       </div>
                     </div>
                   </div>
@@ -117,7 +134,7 @@ function Dashboard() {
               </div>
             </div>
           </div>
-		  <div className="col-md-6 mb-4 d-flex">
+          <div className="col-md-6 mb-4 d-flex">
             <div className="cbii-dashboard-custom-bg w-100 d-flex flex-column">
               <div className="d-flex justify-content-between align-items-center mb-3">
                 <div className="cbii-dashboard-subtitle">

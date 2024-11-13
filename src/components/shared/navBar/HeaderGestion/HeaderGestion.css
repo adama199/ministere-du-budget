@@ -88,7 +88,7 @@
   width: 280px;
   left: -280px;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--background-color);
   transition: all 0.5s ease;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
   top: 74px;
@@ -102,7 +102,7 @@ label #btn,
 label #cancel {
   position: absolute;
   left: 5px;
-  top: 23px;
+  top: 50px;
   cursor: pointer;
   margin: 15px 30px;
   height: 23px;
@@ -134,7 +134,10 @@ label #cancel {
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  left: 235px;
+  left: 150px;
+}
+.color-label-icon-menu-mobile {
+  color: var(--sidebar-text-projet);
 }
 .content-nav-mobile {
   padding-top: 10%;
@@ -146,10 +149,10 @@ label #cancel {
   width: 3px;
 }
 .content-nav-mobile::-webkit-scrollbar-track {
-  background: #fff;
+  background: var(--background-color);
 }
 .content-nav-mobile::-webkit-scrollbar-thumb {
-  background-color: #6741ff;
+  background-color: #0dcaf0;
   border-radius: 20px;
   border: 3px solid transparent;
 }
@@ -174,7 +177,7 @@ label #cancel {
 .admin-page-container-height {
   min-height: 90vh;
   margin-bottom: 100px;
-  margin-top: 140px;
+  margin-top: 90px;
   padding: 20px;
   width: calc(100% - 283px);
   /* left: 270px; */

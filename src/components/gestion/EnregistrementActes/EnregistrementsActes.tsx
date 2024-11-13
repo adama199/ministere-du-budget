@@ -1,36 +1,35 @@
 import React from "react";
-import './EnregistrementsActes.css'
+import "./EnregistrementsActes.css";
 import { FaUserPlus } from "react-icons/fa";
 import EnregistrementsActesTable from "./Tables/EnregistrementsActesTable";
 import { Filter } from "../PartiesList/PartiesList";
+import { NavLink } from "react-router-dom";
 
 function EnregistrementsActes() {
-  const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
       <div className="cbii-details-projet-tab-documents">
         <div className="cbii-details-projet-tab-documents-header mb-3">
           <div className="cbii-details-projet-tab-media-title-container mb-3">
             <div className="cbii-details-projet-tab-media-title">
-            Suivi des enregistrements
+              Suivi des enregistrements
             </div>
           </div>
-          <button
+          <NavLink
+            to="/gestion/nouvel-enregistrement"
             className="btn btn-theme-body-page"
-            onClick={() => setModalShow(true)}
           >
             <span>
-            <FaUserPlus />
+              <FaUserPlus />
             </span>
             <span>Nouvel enregistrement</span>
-          </button>
+          </NavLink>
         </div>
         <Filter />
         <div className="admin-table">
           <EnregistrementsActesTable />
         </div>
       </div>
-      {/* <AddNewFileModale show={modalShow} onHide={() => setModalShow(false)} /> */}
     </>
   );
 }

@@ -86,7 +86,7 @@ function RegistreType() {
 
 export default RegistreType;
 
-const data = [
+export const data = [
   {
     id: 1,
     text: "Acte civil et public",

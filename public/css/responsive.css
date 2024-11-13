@@ -1,4 +1,14 @@
 @media (max-width: 767px) {
+  .content-logo-app-haeder-admin {
+    width: 40px;
+  }
+  .container-nav-menu-header  {
+    flex-direction: column !important;
+    gap: 10px;
+  } 
+  .logo-app-haeder-admin {
+    width: 100%;
+  }
   .header-hiddenable-notification-section {
     width: 100% !important;
   }
@@ -49,9 +59,23 @@
     margin-top: 75px;
     width: 100% !important;
   }
+  .search-filter-form-table {
+    width: 100% !important;
+  }
+  .tabs-container {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
 }
 
 @media (max-width: 992px) {
+  .btn-nav-menu-header {
+    font-size: 15px !important;
+    color: var(--sidebar-color) !important;
+  }
+  .headering-admin-page-title {
+    font-size: 12px !important;
+  }
   .w-50 {
     width: 100% !important;
   }
@@ -88,9 +112,7 @@
   .empty-fluidy {
     padding: 15px 20px 10px 15px !important;
   }
-  .logo-app-haeder-admin {
-    width: 100px;
-  }
+  
   #nav_button:checked
     ~ .page-content-base-container
     .admin-page-container-height {
@@ -198,6 +220,15 @@
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
+  .headering-admin-page-title {
+    font-size: 15px !important;
+  }
+  .admin-page-container-height {
+    margin-top: 80px !important;
+  }
+  .btn-nav-menu-header {
+    font-size: 12px !important;
+  }
   .navbar-collapse .nav-item {
     padding: 0 !important;
   }
@@ -308,9 +339,9 @@
     width: 119px;
     height: 113px;
   }
-  .react-bootstrap-table table {
+  /* .react-bootstrap-table table {
     width: auto;
-  }
+  } */
   .praticien-agenda-user-infos {
     display: block !important;
   }
@@ -331,9 +362,22 @@
   .nav-items-custom {
     margin: 0 !important;
   }
-  .headering-admin-page-title {
-    font-size: 20px !important;
+  .headering-admin-page-title, .cbii-header-username {
+    font-size: 12px !important;
+    line-height: 16px !important;
   }
+  .empty-fluidy {
+    flex-wrap: nowrap !important;
+    gap: 15px;
+  }
+  .user-avatar {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .img-ai-consulting {
+    width: 100%;
+  }
+  
 }
 @media (max-width: 1024px) {
   .agenda-rdv-btn-action-reprogram,

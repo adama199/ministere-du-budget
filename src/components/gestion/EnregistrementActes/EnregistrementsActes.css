@@ -1,0 +1,55 @@
+.auth-form-control:disabled {
+    cursor: not-allowed;
+    background: #E6F3F0;
+    border-radius: 5px;
+    padding: 15px 15px 15px 45px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444150;
+    border: 0;
+}
+
+.btn-remove-others-partie, .btn-remove-others-partie:hover {
+    color: rgb(238, 22, 22);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.btn-add-others-partie, .btn-add-others-partie:hover {
+    color: #0dcaf0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container-form-others-partie {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+.container-form-others-partie div {
+    margin-bottom: 0 !important;
+}
+.content-icon-file {
+    color: rgb(253, 126, 20);
+    font-size: 20px;
+}

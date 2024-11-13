@@ -1,0 +1,57 @@
+.title-gray-support {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--sidebar-text-projet);
+}
+.text-support {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--sidebar-text-projet);
+}
+.content-text-support-describe {
+    padding: 15px 0;
+}
+.content-col-left-support {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+.container-about-app {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+.btn-nav-menu-header.active, .btn-nav-menu-header:focus, .btn-nav-menu-header:focus-visible,
+.btn-check:checked+.btn-nav-menu-header, .btn-nav-menu-header.show, .btn-nav-menu-header:first-child:active, :not(.btn-check)+.btn-nav-menu-header:active {
+    color: #0dcaf0;
+    border: 0 !important;
+}
+.title-contact-gestion {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #0dcaf0;
+    text-decoration: underline;
+}
+.contact-title-gestion {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #0dcaf0;
+}
+.text-total-fdj {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    color: var(--sidebar-text-projet);
+}
+.container-total-fdj {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
